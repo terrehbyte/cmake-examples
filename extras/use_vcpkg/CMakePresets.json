@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "base",
+            "hidden": true,
+            "binaryDir": "build/"
+        },
+        {
+            "name": "vcpkg",
+            "inherits": "base",
+            "toolchainFile": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
+        }
+    ]
+}
